@@ -28,19 +28,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        UINavigationBar.appearance().barTintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
         
-//        var navigationBarAppearace = UINavigationBar.appearance()
-//
-//        navigationBarAppearace.tintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
-//        navigationBarAppearace.barTintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
         
         searchTF.leftViewMode = UITextField.ViewMode.always
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         let image = UIImage(systemName: "magnifyingglass")
         imageView.image = image
         searchTF.leftView = imageView
-
+        
     }
     
     
@@ -136,6 +131,37 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
             cell.contentView.layer.borderColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
         }
     }
+    
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        viewForSupplementaryElementOfKind kind: String,
+        at indexPath: IndexPath
+    ) -> UICollectionReusableView {
+        switch kind {
+            // 1
+        case UICollectionView.elementKindSectionHeader:
+            // 2
+            let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: "headerViewItem",
+                for: indexPath)
+            
+            // 3
+            guard let typedHeaderView = headerView as? HeaderView
+            else { return headerView }
+            
+            // 4
+             
+            typedHeaderView.titleHeader.text = "items"
+            return typedHeaderView
+        default:
+            // 5
+            assert(false, "Invalid element type")
+        }
+    }
+    
+
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout{
@@ -164,20 +190,20 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
 
 
 extension ViewController: UIScrollViewDelegate{
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        //        if scrollView == collectionView3{
-//        //            collectionView1.isHidden = true
-//        ////            collectionView3Constrain.constant = 0
-//        //        }
-//        if(scrollView.panGestureRecognizer.translation(in: scrollView.superview).y > 0)
-//        {
-//            print("scrolled up")
-//            collectionView1.isHidden = false
-//        }
-//        else
-//        {
-//            print("scrolled down")
-//            collectionView1.isHidden = true
-//        }
-//    }
+    //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    //        //        if scrollView == collectionView3{
+    //        //            collectionView1.isHidden = true
+    //        ////            collectionView3Constrain.constant = 0
+    //        //        }
+    //        if(scrollView.panGestureRecognizer.translation(in: scrollView.superview).y > 0)
+    //        {
+    //            print("scrolled up")
+    //            collectionView1.isHidden = false
+    //        }
+    //        else
+    //        {
+    //            print("scrolled down")
+    //            collectionView1.isHidden = true
+    //        }
+    //    }
 }
