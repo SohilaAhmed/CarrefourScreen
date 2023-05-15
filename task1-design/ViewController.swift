@@ -20,12 +20,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView3: UICollectionView!
     
+    @IBOutlet weak var searchTF: UITextField!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        UINavigationBar.appearance().barTintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
+        
+//        var navigationBarAppearace = UINavigationBar.appearance()
+//
+//        navigationBarAppearace.tintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
+//        navigationBarAppearace.barTintColor =  #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
+        
+        searchTF.leftViewMode = UITextField.ViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        let image = UIImage(systemName: "magnifyingglass")
+        imageView.image = image
+        searchTF.leftView = imageView
+
     }
     
     
@@ -33,6 +48,10 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func searchAction(_ sender: UITextField) {
+        
+    }
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -86,6 +105,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         
         cell.img.image = UIImage(named: "Food")
         cell.label.text = "Food"
+        
+        cell.contentView.layer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        cell.contentView.layer.borderColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
+        cell.contentView.layer.borderWidth = 0.5
+        cell.contentView.layer.cornerRadius = 20
+        cell.contentView.layer.masksToBounds = true
         
         return cell
     }
