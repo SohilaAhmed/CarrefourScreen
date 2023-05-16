@@ -268,12 +268,12 @@
                                     <outlet property="delegate" destination="DPD-JT-lnI" id="eJT-Th-4vy"/>
                                 </connections>
                             </collectionView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NKQ-mS-51T">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NKQ-mS-51T">
                                 <rect key="frame" x="30" y="115" width="333" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="bjk-rs-oJt"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="searchAction:" destination="DPD-JT-lnI" eventType="editingChanged" id="xBg-lT-PGp"/>
@@ -292,7 +292,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Carrefour" id="5Co-9u-qif">
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="done" id="kT0-oK-TIh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="kT0-oK-TIh">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="sEO-Si-XXq">
                                 <rect key="frame" x="278.33333333333331" y="5" width="98.666666666666686" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

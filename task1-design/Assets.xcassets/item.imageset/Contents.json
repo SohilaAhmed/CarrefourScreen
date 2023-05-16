@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "fillHeart1.png",
+      "filename" : "item.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "fillHeart2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "fillHeart3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

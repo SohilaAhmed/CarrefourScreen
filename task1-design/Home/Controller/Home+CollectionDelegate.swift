@@ -29,27 +29,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell2{
-            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
-        }
+//        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell2{
+//            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
+//        }
         
-        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell1{
-            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9843137255, blue: 1, alpha: 1)
-            cell.contentView.layer.borderColor = #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
-        }
+        self.itemPopUp = ItemPopUp(frame: self.view.frame)
+        self.itemPopUp.exitBtn.addTarget(self, action: #selector(exitPopUp), for: .touchUpInside)
+        self.view.addSubview(itemPopUp)
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell2{
-            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.9607843137, green: 0.9568627451, blue: 0.9568627451, alpha: 1)
-        }
-        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell1{
-            cell.contentView.layer.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            cell.contentView.layer.borderColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
-        }
+    @objc func exitPopUp(){
+        self.itemPopUp.removeFromSuperview()
     }
-    
     
     func collectionView(
         _ collectionView: UICollectionView,
@@ -63,23 +54,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 ofKind: kind,
                 withReuseIdentifier: "headerViewItem",
                 for: indexPath)
-            
-            
+             
             guard let typedHeaderView = headerView as? HeaderView
             else { return headerView }
-            
-            
             
             typedHeaderView.addSubview(typedHeaderView.headerView)
             
             return typedHeaderView
         default:
-            // 5
             assert(false, "Invalid element type")
         }
     }
-    
-    
+   
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout{

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Cleaners.png",
+      "filename" : "kindpng_6282778.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "kindpng_6282778@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "kindpng_6282778@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "fillHeart1.png",
+      "filename" : "icons8-share-30(@1x).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "fillHeart2.png",
+      "filename" : "icons8-share-60(@2x).png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "fillHeart3.png",
+      "filename" : "icons8-share-90(@3x).png",
       "idiom" : "universal",
       "scale" : "3x"
     }
