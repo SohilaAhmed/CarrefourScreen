@@ -33,9 +33,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
 //        }
         
-        self.itemPopUp = ItemPopUp(frame: self.view.frame)
-        self.itemPopUp.exitBtn.addTarget(self, action: #selector(exitPopUp), for: .touchUpInside)
-        self.view.addSubview(itemPopUp)
+//        self.itemPopUp = ItemPopUp(frame: self.view.frame)
+//        self.itemPopUp.exitBtn.addTarget(self, action: #selector(exitPopUp), for: .touchUpInside)
+//        self.view.addSubview(itemPopUp)
+        let storyboard =  UIStoryboard(name: "Item", bundle: nil)
+        let popupViewController = storyboard.instantiateViewController(withIdentifier: "ItemPopupViewController")
+        present(popupViewController, animated: true, completion: nil)
     }
     
     @objc func exitPopUp(){

@@ -138,7 +138,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="7Vg-3c-EZ9" firstAttribute="top" secondItem="NOY-XD-WsU" secondAttribute="bottom" constant="16" id="B6s-Tc-GQy"/>
                                 <constraint firstItem="sTX-hx-ylv" firstAttribute="top" secondItem="lOH-Vt-ER3" secondAttribute="bottom" constant="9" id="DNu-Eb-7Lz"/>
@@ -209,7 +209,7 @@
                             </constraints>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="aRO-5z-4FP" secondAttribute="bottom" constant="19.670000000000002" id="6Bp-iY-TeA"/>
                         <constraint firstItem="CJ7-1N-mfQ" firstAttribute="leading" secondItem="rJh-RY-5ct" secondAttribute="leading" id="7QB-2o-Wdk"/>
@@ -228,7 +228,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="0.46106159134416391" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="rJh-RY-5ct" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5SI-Tb-SIl"/>
                 <constraint firstItem="rJh-RY-5ct" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PCO-dH-pg6"/>
@@ -247,6 +247,9 @@
         <image name="item" width="284" height="281"/>
         <image name="shareIcon" width="30" height="30"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

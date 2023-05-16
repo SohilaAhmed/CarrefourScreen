@@ -11,16 +11,10 @@ let reuseIdentifier2 = "item2"
 
 class CollectionViewCell2: UICollectionViewCell {
     
-    @IBOutlet weak var label: UILabel!
-    
-    override func awakeFromNib() {
-      super.awakeFromNib()
-    }
+    @IBOutlet weak var label: UILabel! 
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-//        if !initi
         
         self.contentView.layer.borderColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
         self.contentView.layer.borderWidth = 0.3
