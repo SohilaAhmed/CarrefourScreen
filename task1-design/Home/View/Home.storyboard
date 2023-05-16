@@ -53,8 +53,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15% offer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibW-pO-7iE">
-                                                    <rect key="frame" x="126.33333333333333" y="208" width="50.666666666666671" height="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 15% offer    " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibW-pO-7iE">
+                                                    <rect key="frame" x="110.66666666666669" y="208" width="66.333333333333314" height="25"/>
                                                     <color key="backgroundColor" red="0.93333333330000001" green="0.18823529410000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
@@ -106,7 +106,7 @@
                                                 <constraint firstItem="6du-V2-kQf" firstAttribute="top" secondItem="UNR-K6-fdE" secondAttribute="top" constant="8" id="K9Y-lB-pB4"/>
                                                 <constraint firstAttribute="trailing" secondItem="gnz-A0-cab" secondAttribute="trailing" constant="14" id="Ldo-z7-J83"/>
                                                 <constraint firstItem="d2u-Gf-mno" firstAttribute="top" secondItem="UNR-K6-fdE" secondAttribute="top" id="ODX-Lr-xwr"/>
-                                                <constraint firstAttribute="bottom" secondItem="ibW-pO-7iE" secondAttribute="bottom" constant="-1" id="R8w-yf-8yL"/>
+                                                <constraint firstAttribute="bottom" secondItem="ibW-pO-7iE" secondAttribute="bottom" id="R8w-yf-8yL"/>
                                                 <constraint firstItem="UGL-ns-nC5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZU5-rD-p5G" secondAttribute="trailing" constant="10" id="SnX-Jz-dYj"/>
                                                 <constraint firstItem="6du-V2-kQf" firstAttribute="leading" secondItem="UNR-K6-fdE" secondAttribute="leading" constant="13" id="X9d-dQ-bua"/>
                                                 <constraint firstItem="ibW-pO-7iE" firstAttribute="top" secondItem="gnz-A0-cab" secondAttribute="bottom" constant="16" id="ayQ-Tk-K9e"/>

@@ -21,7 +21,6 @@ class HomeViewController: UIViewController {
         searchTF.leftView = imageView
     }
     
-    
     @IBAction func searchAction(_ sender: UITextField) {
         
     }

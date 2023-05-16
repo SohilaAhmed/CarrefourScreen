@@ -72,7 +72,7 @@
 		7B2A165E2A12614000D66064 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7B2A16652A127BC000D66064 /* Header */,
+				7B2A16652A127BC000D66064 /* CollectionHeader */,
 				7B2A16622A12618600D66064 /* Cells */,
 			);
 			path = Controller;
@@ -95,12 +95,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		7B2A16652A127BC000D66064 /* Header */ = {
+		7B2A16652A127BC000D66064 /* CollectionHeader */ = {
 			isa = PBXGroup;
 			children = (
 				7B2A16582A120D4C00D66064 /* HeaderView.swift */,
 			);
-			path = Header;
+			path = CollectionHeader;
 			sourceTree = "<group>";
 		};
 		7B5C533B2A10C28100956876 = {

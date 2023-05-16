@@ -19,6 +19,9 @@ class CollectionViewCell2: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+//        if !initi
+        
         self.contentView.layer.borderColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
         self.contentView.layer.borderWidth = 0.3
         self.contentView.layer.cornerRadius = 20

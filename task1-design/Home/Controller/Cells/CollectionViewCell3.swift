@@ -20,5 +20,6 @@ class CollectionViewCell3: UICollectionViewCell {
         self.contentView.layer.borderWidth = 0.3
         self.contentView.layer.cornerRadius = 20
         self.contentView.layer.masksToBounds = true
+        
     }
 }
