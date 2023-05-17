@@ -11,15 +11,19 @@ class ItemPopupViewController: UIViewController {
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var itemsCollectionView: UICollectionView!
     
+    @IBOutlet weak var newLabel: UILabel!
+    
     var currentCellIndex = 0
+    var numberOfItem = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        newLabel.text = " \(currentCellIndex + 1) / 7"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         view.addGestureRecognizer(tapGesture)
     }
-    
+ 
     @objc func handleTap(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: innerView)
         
@@ -35,27 +39,31 @@ class ItemPopupViewController: UIViewController {
     @IBAction func nextItem(_ sender: Any) {
         moveToNextItem()
     }
-    
-    @IBAction func previousItem(_ sender: Any) {
-        moveToPreviousItem()
-    }
-    
-    
     func moveToNextItem(){
         if currentCellIndex < 6{
             currentCellIndex += 1
         }else{
             currentCellIndex = 0
         }
-        itemsCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+        itemsCollectionView.scrollToItem(at: IndexPath(row: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+        print(currentCellIndex)
+        newLabel.text = "\(currentCellIndex + 1) / 7"
+        
     }
+    
+    @IBAction func previousItem(_ sender: Any) {
+        moveToPreviousItem()
+    }
+     
+    
     
     func moveToPreviousItem(){
         if currentCellIndex > 0{
             currentCellIndex -= 1
         }else{
-            currentCellIndex = 5
+            currentCellIndex = 6
         }
         itemsCollectionView.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
+        newLabel.text = " \(currentCellIndex + 1) / 7"
     }
 }
