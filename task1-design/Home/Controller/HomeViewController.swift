@@ -10,9 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView3: UICollectionView!
-    @IBOutlet weak var searchTF: UITextField!
-    
-    var itemPopUp: ItemPopUp!
+    @IBOutlet weak var searchTF: UITextField! 
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -25,24 +25,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.label.text = "20.00 BHD"
         
         return cell
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell2{
-//            cell.contentView.layer.backgroundColor = #colorLiteral(red: 0.0862745098, green: 0.5254901961, blue: 0.6862745098, alpha: 1)
-//        }
         
-//        self.itemPopUp = ItemPopUp(frame: self.view.frame)
-//        self.itemPopUp.exitBtn.addTarget(self, action: #selector(exitPopUp), for: .touchUpInside)
-//        self.view.addSubview(itemPopUp)
         let storyboard =  UIStoryboard(name: "Item", bundle: nil)
         let popupViewController = storyboard.instantiateViewController(withIdentifier: "ItemPopupViewController")
         present(popupViewController, animated: true, completion: nil)
-    }
-    
-    @objc func exitPopUp(){
-        self.itemPopUp.removeFromSuperview()
     }
     
     func collectionView(
@@ -57,7 +47,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 ofKind: kind,
                 withReuseIdentifier: "headerViewItem",
                 for: indexPath)
-             
+            
             guard let typedHeaderView = headerView as? HeaderView
             else { return headerView }
             
@@ -68,14 +58,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             assert(false, "Invalid element type")
         }
     }
-   
+    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         return CGSize(width: 177, height: 233)
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
