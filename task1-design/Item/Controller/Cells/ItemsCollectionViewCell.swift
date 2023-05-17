@@ -13,7 +13,6 @@ class ItemsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var cellView: UIView!
-    
     @IBOutlet weak var offerView: UIView!
     
     override func layoutSubviews() {
