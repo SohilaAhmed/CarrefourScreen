@@ -21,11 +21,7 @@ extension ItemPopupViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
      
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ItemsCollectionViewCell
-        cell.label.text = "\(indexPath.row)"
-//        currentCellIndex = indexPath.item
-//        cell.label.text = "20.00 BHD"
-//        numberOfItemLabel.text = "\(indexPath.item + 1) / 7"
-//        print(indexPath.item  )
+        cell.label.text = "20.00 BHD" 
         
         return cell
         

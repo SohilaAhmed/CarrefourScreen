@@ -39,6 +39,11 @@ class ItemPopupViewController: UIViewController {
     @IBAction func nextItem(_ sender: Any) {
         moveToNextItem()
     }
+    
+    @IBAction func previousItem(_ sender: Any) {
+        moveToPreviousItem()
+    }
+    
     func moveToNextItem(){
         if currentCellIndex < 6{
             currentCellIndex += 1
@@ -48,14 +53,7 @@ class ItemPopupViewController: UIViewController {
         itemsCollectionView.scrollToItem(at: IndexPath(row: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
         print(currentCellIndex)
         newLabel.text = "\(currentCellIndex + 1) / 7"
-        
     }
-    
-    @IBAction func previousItem(_ sender: Any) {
-        moveToPreviousItem()
-    }
-     
-    
     
     func moveToPreviousItem(){
         if currentCellIndex > 0{
