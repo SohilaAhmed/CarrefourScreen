@@ -21,9 +21,6 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZbS-yp-ZBD">
                                 <rect key="frame" x="0.0" y="158" width="393" height="630"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="630" id="t0u-pz-HXq"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1XJ-zS-wql">
                                     <size key="itemSize" width="177" height="233"/>
                                     <size key="headerReferenceSize" width="50" height="224"/>
@@ -283,6 +280,7 @@
                         <viewLayoutGuide key="safeArea" id="BGg-MW-OLi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZbS-yp-ZBD" firstAttribute="top" secondItem="NKQ-mS-51T" secondAttribute="bottom" constant="8" symbolic="YES" id="GOP-BH-wch"/>
                             <constraint firstItem="NKQ-mS-51T" firstAttribute="leading" secondItem="BGg-MW-OLi" secondAttribute="leading" constant="30" id="RZ3-ly-dV5"/>
                             <constraint firstItem="BGg-MW-OLi" firstAttribute="trailing" secondItem="NKQ-mS-51T" secondAttribute="trailing" constant="30" id="aiQ-lT-Wsi"/>
                             <constraint firstItem="ZbS-yp-ZBD" firstAttribute="trailing" secondItem="BGg-MW-OLi" secondAttribute="trailing" id="ben-7e-egd"/>
