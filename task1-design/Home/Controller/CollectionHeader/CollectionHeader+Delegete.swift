@@ -1,5 +1,5 @@
 //
-//  CollectionHeader + Delegete.swift
+//  CollectionHeader+Delegete.swift
 //  task1-design
 //
 //  Created by Sohila on 18/05/2023.
@@ -92,10 +92,7 @@ extension HeaderView: UICollectionViewDelegate, UICollectionViewDataSource{
             selectedIndexCollection1 = indexPath.row
             
         }
-        
     }
-    
-    
 }
 
 
@@ -106,8 +103,7 @@ extension HeaderView: UICollectionViewDelegateFlowLayout{
         
         if(collectionView == collectionView2){
             return CGSize(width: 90, height: 40)
-        }
-        
+        } 
         return CGSize(width: 150, height: 133)
     }
     

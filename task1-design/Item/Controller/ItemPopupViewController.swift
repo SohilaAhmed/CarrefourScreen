@@ -9,8 +9,7 @@ import UIKit
 
 class ItemPopupViewController: UIViewController {
     @IBOutlet weak var innerView: UIView!
-    @IBOutlet weak var itemsCollectionView: UICollectionView!
-    
+    @IBOutlet weak var itemsCollectionView: UICollectionView! 
     @IBOutlet weak var newLabel: UILabel!
     
     var currentCellIndex = 0
@@ -50,8 +49,7 @@ class ItemPopupViewController: UIViewController {
         }else{
             currentCellIndex = 0
         }
-        itemsCollectionView.scrollToItem(at: IndexPath(row: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true)
-        print(currentCellIndex)
+        itemsCollectionView.scrollToItem(at: IndexPath(row: currentCellIndex, section: 0), at: .centeredHorizontally, animated: true) 
         newLabel.text = "\(currentCellIndex + 1) / 7"
     }
     

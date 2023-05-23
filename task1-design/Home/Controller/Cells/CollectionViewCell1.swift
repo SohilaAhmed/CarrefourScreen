@@ -11,8 +11,7 @@ let reuseIdentifier1 = "item1"
 
 class CollectionViewCell1: UICollectionViewCell {
     
-    @IBOutlet weak var img: UIImageView!
-    
+    @IBOutlet weak var img: UIImageView! 
     @IBOutlet weak var label: UILabel!
     
     override func layoutSubviews() {
